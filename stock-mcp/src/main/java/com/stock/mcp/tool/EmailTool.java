@@ -88,7 +88,7 @@ public class EmailTool {
 
     /**
      * @Description: markdown 转 html
-     * @Author 风间影月
+     * @Author huiyj
      * @param markdownContent
      * @return String
      */
