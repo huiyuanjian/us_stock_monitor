@@ -15,14 +15,14 @@ public interface StockService {
 
     /**
      * @Description: 根据股票代码查询股票数据
-     * @Author 风间影月
+     * @Author huiyj
      * @param stockCode
      */
     public List<USStockRss> queryStock(String stockCode);
 
     /**
      * @Description: 查询时间段内的股票数据
-     * @Author 风间影月
+     * @Author huiyj
      * @param stockCode
      * @param startDate
      * @param endDate
@@ -32,7 +32,7 @@ public interface StockService {
 
     /**
      * @Description: 查询指定日期段内异动次数超过指定次数
-     * @Author 风间影月
+     * @Author huiyj
      * @param targetCounts
      * @param startDate
      * @param endDate
@@ -42,7 +42,7 @@ public interface StockService {
 
     /**
      * @Description: 根据标题关键字查询股票数据
-     * @Author 风间影月
+     * @Author huiyj
      * @param titleKeywords
      * @return List<USStockRss>
      */
