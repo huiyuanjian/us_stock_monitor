@@ -24,12 +24,13 @@ import java.util.Arrays;
 public class DingTalkGroupMessageUtils {
 
 //    https://oapi.dingtalk.com/robot/send?access_token=
+    // https://oapi.dingtalk.com/robot/send?access_token=5bcbb5404aa9d2fba10c022745bc209aecc87af4569c86b9d19d018fe6856523
 
-    public static final String CUSTOM_ROBOT_TOKEN = "cd6489b7397bbbb5a44d1f9c0baf65b7c54f4550c57da591dc00ac3e3b29387d";
+    public static final String CUSTOM_ROBOT_TOKEN = "5bcbb5404aa9d2fba10c022745bc209aecc87af4569c86b9d19d018fe6856523";
 
     public static final String USER_ID= "<you need @ group user's userId>";
 
-    public static final String SECRET = "SEC7b8dd9bbc9f2b4aaafe88999a3c809fd4e667c17113f66186edabbcebf7a5cac";
+    public static final String SECRET = "SEC839e61e0ca25a9cc15407bf15739c0fe07ffef6493ebd3826d8caf3450ba9a0c";
 
     public static void sendTextMessage() {
         try {
@@ -51,7 +52,7 @@ public class DingTalkGroupMessageUtils {
              */
             //定义文本内容
             OapiRobotSendRequest.Text text = new OapiRobotSendRequest.Text();
-            text.setContent("hello 风间影月，这是java代码调用的钉钉机器人所发送的消息~~~");
+            text.setContent("hello huiyj，这是java代码调用的钉钉机器人所发送的消息~~~");
             //定义 @ 对象
             OapiRobotSendRequest.At at = new OapiRobotSendRequest.At();
             at.setAtUserIds(Arrays.asList(USER_ID));
@@ -72,8 +73,8 @@ public class DingTalkGroupMessageUtils {
         }
     }
 
-//    public static void main(String[] args) {
-//        new DingTalkGroupMessageUtils().sendTextMessage();
-//    }
+    public static void main(String[] args) {
+        new DingTalkGroupMessageUtils().sendTextMessage();
+    }
 
 }
